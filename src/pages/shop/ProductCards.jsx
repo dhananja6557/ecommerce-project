@@ -14,7 +14,7 @@ const ProductCards = ({ products }) => {
                             </Link>
 
                             <div className='hover:block absolute top-3 right-3'>
-                                <button><i className="ri-shopping-cart-2-line bg-red-500 p-1.5 text-white hover:bg-red-800 cursor-pointer"></i></button>
+                                <button><i className="ri-shopping-cart-2-line bg-red-500 p__2 text-white hover:bg-red-800 cursor-pointer"></i></button>
                             </div>
                         </div>
 

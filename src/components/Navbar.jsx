@@ -24,7 +24,7 @@ const Navbar = () => {
                     <span><Link to="/search"><i className="ri-search-2-line"></i></Link></span>
                     <span>
                         <button className='hover:text-red-600 cursor-pointer'><i className="ri-shopping-cart-line"></i></button>
-                        <sup className="text-sm inline-block px-1.5 text-white rounded-full bg-red-600 text-center">0</sup>
+                        <sup className="text-sm inline-block p__0 text-white rounded-full bg-red-600 text-center">0</sup>
                     </span>
                     <span>
                         <Link to="/login"><i className="ri-user-line"></i></Link>
