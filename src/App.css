@@ -633,3 +633,9 @@ input[type="number"]::-webkit-outer-spin-button {
 .add-product-btn:focus-visible {
     box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.5); /* focus:ring-offset-2 focus:ring-indigo-500 */
 }
+
+/* Margin and Padding */
+.mt__12 { margin-top: 2.5rem; }
+.mb__12 { margin-bottom: 2.5rem; }
+.pt__12 { padding-top: 2.5rem; }
+.pb__12 { padding-bottom: 2.5rem; }

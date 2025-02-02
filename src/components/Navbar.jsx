@@ -27,7 +27,7 @@ const Navbar = () => {
                         <sup className="text-sm inline-block px-1.5 text-white rounded-full bg-red-600 text-center">0</sup>
                     </span>
                     <span>
-                        <Link to="/login"><i class="ri-user-line"></i></Link>
+                        <Link to="/login"><i className="ri-user-line"></i></Link>
                     </span>
                 </div>
             </nav>
