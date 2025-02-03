@@ -22,9 +22,9 @@ const Navbar = () => {
                 {/* Nav Icons */}
                 <div className="nav__icons relative">
                     <span><Link to="/search"><i className="ri-search-2-line"></i></Link></span>
-                    <span>
+                    <span className="relative">
                         <button className='hover:text-red-600 cursor-pointer'><i className="ri-shopping-cart-line"></i></button>
-                        <sup className="text-sm inline-block p__0 text-white rounded-full bg-red-600 text-center">0</sup>
+                        <sup className="absolute -top-2 -right-2 text-xs flex items-center justify-center w-4 h-4 text-white rounded-full bg-red-600">0</sup>
                     </span>
                     <span>
                         <Link to="/login"><i className="ri-user-line"></i></Link>

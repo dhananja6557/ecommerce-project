@@ -646,3 +646,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* Rounded */
 .rounded__full { border-radius: 50%; }
+
+/* Colors */
+.bg__primary__light { background: var(--primary-color-light); }
