@@ -635,6 +635,10 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /* Margin and Padding */
+.mt__1 { margin-top: .5rem; }
+.mt__2 { margin-top: .75rem; }
+.mt__3 { margin-top: 1rem; }
+.mt__4 { margin-top: 1.25rem; }
 .mt__12 { margin-top: 2.5rem; }
 
 .mb__0 { margin-bottom: .25rem; }
