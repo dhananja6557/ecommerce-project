@@ -1,6 +1,10 @@
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
+    const products = useSelector((state) => state.cart.products);
+
     return (
         <header className="fixed-nav-bar w-nav" data-animation="default" data-collapse="medium" data-duration="400">
             <nav className="max-w-screen-2xl mx-auto px-4 flex justify-between items-center">
@@ -24,7 +28,7 @@ const Navbar = () => {
                     <span><Link to="/search"><i className="ri-search-2-line"></i></Link></span>
                     <span className="relative">
                         <button className='hover:text-red-600 cursor-pointer'><i className="ri-shopping-cart-line"></i></button>
-                        <sup className="absolute -top-2 -right-2 text-xs flex items-center justify-center w-4 h-4 text-white rounded-full bg-red-600">0</sup>
+                        <sup className="absolute -top-2 -right-2 text-xs flex items-center justify-center w-4 h-4 text-white rounded-full bg-red-600">{products.length}</sup>
                     </span>
                     <span>
                         <Link to="/login"><i className="ri-user-line"></i></Link>
