@@ -634,6 +634,12 @@ input[type="number"]::-webkit-outer-spin-button {
     box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.5); /* focus:ring-offset-2 focus:ring-indigo-500 */
 }
 
+/* Cart List Image (size-12) */
+.cart-list-image {
+    width: 64px;
+    height: 64px;
+}
+
 /* Margin and Padding */
 .mt__1 { margin-top: .5rem; }
 .mt__2 { margin-top: .75rem; }

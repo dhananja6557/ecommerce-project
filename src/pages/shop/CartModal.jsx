@@ -20,21 +20,22 @@ const CartModal = ({ products, isOpen, onClose }) => {
                         <button className='text-gray-600 cursor-pointer hover:text-gray-900' onClick={() => onClose()}><i className="text-white bg-black hover:bg-red-500 ri-xrp-fill p__1"></i></button>
                     </div>
 
-                    <div>
+                    <div className='cart-items'>
                         {
                             products.length === 0 ? (<div>Your cart is empty</div>) : (
-                                products.map((item, index) => (
-                                    <div key={index} className='flex flex-col shadow-md md:flex-row md:items-center md:justify-between md:p__3 p__1 mb__2'>
+                                products.map((product, index) => (
+                                    <div key={index} className='flex items-center justify-between border-b border-gray-200 p__2'>
                                         <div className='flex items-center'>
-                                            <span className='text-white bg-red-500 rounded-full mr__1 px__0'>0{index + 1}</span>
-                                            <img src={item.image} alt={item.name} className='object-cover size-12 mr__2' />
-                                            <h5 className='text-lg font-medium'>{item.name}</h5>
-                                            <p className='text-sm text-gray-600'>Rs: {Number(item.price).toFixed(2)}</p>
+                                            <img src={product.image} alt={product.name} className='cart-list-image object-cover' />
+                                            <div className='ml__2'>
+                                                <h1 className='text-lg font-semibold'>{product.name}</h1>
+                                                <p className='text-gray-500'>Rs: {Number(product.price).toFixed(2)}</p>
+                                            </div>
                                         </div>
 
                                         <div className='flex flex-row items-center justify-end md:justify-start mt__1'>
                                             <button className='flex items-center text-gray-700 bg-gray-200 rounded-full ml__3 size-6 px__1 hover:bg-red-500 hover:text-white'>-</button>
-                                            <span className='text-center px__1 mx__0'>{item.quantity}</span>
+                                            <span className='text-center px__1 mx__0'>{product.quantity}</span>
                                             <button className='flex items-center text-gray-700 bg-gray-200 rounded-full size-6 px__1 hover:bg-red-500 hover:text-white'>+</button>
                                         </div>
 
